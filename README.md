@@ -1,5 +1,7 @@
 # Whatsapp Phone Numbers Scraper
 
+    Scrape all whatsapp numbers and save them to a json file
+
 - Target : `https://web.whatsapp.com/`
 
 <p>
@@ -19,7 +21,7 @@
 ## Setup
 
 ```
-git clone https://knowbee@bitbucket.org/fastaio/whatsapp_phone_numbers.git
+git clone https://github.com/knowbee/whatsapp_phone_numbers.git
 ```
 
 ```
