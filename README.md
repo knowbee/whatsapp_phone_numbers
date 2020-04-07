@@ -2,10 +2,19 @@
 
 - Target : `https://web.whatsapp.com/`
 
+<p>
+    <img src="https://raw.githubusercontent.com/knowbee/hosting/master/assets/whatsapplogin.PNG" width="400px" height="auto" hspace="10"/>
+</p>
+
 ## Requirements
 
-- Chrome Webdriver
-- Python >= 3.5
+### - Chrome Webdriver
+
+- How to install webdriver on linux/mac os and windows os : [click here](https://zwbetz.com/download-chromedriver-binary-and-add-to-your-path-for-automated-functional-testing/)
+
+### - Python >= 3.5
+
+- How to install python [click here](https://realpython.com/installing-python/)
 
 ## Setup
 
@@ -33,6 +42,8 @@ pip install -r requirements.txt
 
 ```
   python run.py
+
+  scan the code
 ```
 
 ## Author
