@@ -14,16 +14,20 @@ wait = WebDriverWait(driver, 600)
 
 def scrape():
     i = 0
+
+    # right_side_component
     groups_people = driver.find_elements_by_xpath(
         '//*[@id="pane-side"]/div[1]/div/div/div')
     for p in groups_people:
-        p.click()
-        x_arg = '//*[@id="main"]/header/div[2]'
-        user = wait.until(EC.presence_of_element_located((By.XPATH, x_arg)))
+        p.click()  # open a chat
+        left_side = '//*[@id="main"]/header/div[2]'
+        chat = wait.until(
+            EC.presence_of_element_located((By.XPATH, left_side)))
+
         header = p.find_element_by_xpath('//*[@id="main"]/header/div[2]')
         title = header.find_element_by_xpath(
-            '//*[@id="main"]/header/div[2]/div[1]/div/span').text
-        header.click()
+            '//*[@id="main"]/header/div[2]/div[1]/div/span').text  # get username
+        header.click()  # click on the header inside chat
         time.sleep(2)
         phone = p.find_element_by_xpath(
             '/html/body/div[1]/div/div/div[2]/div[3]/span/div/span/div/div/div[1]').text.split("\n")[-4]
